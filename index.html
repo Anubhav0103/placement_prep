@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <head id="form-head-container">
+        <h1 id="form-head">Placement Details</h1>
+    </head>
+    <div id="form-upload-container">
+        <h2 id="upload-heading">Upload Student Data</h2>
+        <form  id="form-upload">
+            <input type="text" placeholder="USN" id="usn-input">
+            <input type="text" placeholder="Branch" id="branch-input">
+            <input type="text" id="name-input" placeholder="Name">
+            <input type="text" id="cgpa-input" placeholder="CGPA">
+            <input type="text" id="year-input" placeholder="Academic year">
+            <button id="submit-upload-button">Submit</button>
+        </form>
+    </div>
+    <div id="search-container">
+        <h2 id="search-heading">Search Student Data</h2>
+        <input type="text" id="search-box" placeholder="Search USN">
+        <button id="submit-search-button">Submit</button>
+        <table id="show-data-table">
+            <thead id="table-heading-container">
+                <tr>
+                    <th>USN</th>
+                    <th>Branch</th>
+                    <th>Name</th>
+                    <th>CGPA</th>
+                    <th>Academic year</th>
+                    <th>Delete/Edit</th>
+                </tr>
+            </thead>
+            <tbody id="table-body-container">
+
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
